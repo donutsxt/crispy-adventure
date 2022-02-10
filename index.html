@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body id="backgroundimage">
+
+<header></header>
+
+<div id="navmainaside">
+
+<nav>
+    <ul>
+    <li><a href="">home</a></li>
+    <li><a href="">about</a></li>
+    <li><a href="">information</a></li>
+    </ul>
+</nav>
+
+<main id="main">
+<article class=article01></article>
+<article class=article02></article>
+<article class=article03></article>
+<article class=article04></article>
+<article class=article05></article>
+<article class=article06></article>
+</main>
+
+<aside></aside>
+  
+</div>
+
+<button id="findmorebutton">find more</button>
+<footer id=popup></footer>
+  <script>
+    const button = document.getElementById("findmorebutton");
+    button.addEventListener("click",() => {
+      const main = document.getElementById("main");
+      const newarticle = document.createElement("article");
+      newarticle.classList.add("article")
+      main.appendChild(newarticle);
+    });
+  </script>
+</body>
+</html>
